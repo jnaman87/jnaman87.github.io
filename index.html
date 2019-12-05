@@ -1,0 +1,404 @@
+<html>
+    
+	<head>
+        
+		<title>Shopping</title>
+	
+        	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+		<style>
+            
+			.layout{
+
+               			 	width : 1080px;
+                
+				height : 720px;
+                
+				margin : auto;
+            
+				}
+            
+			.header {
+                
+				width : 100%;
+                
+				height : 8%;
+                
+				background-color : black;
+                
+				margin : auto;
+            
+				}
+            
+			.logo{
+                
+				width: 10%;
+                
+				height:100%;
+                
+				background-color: black;
+                
+				float : left;
+            
+				}
+			.eg{
+				margin : 1px;
+				margin-top : 6px;
+				border-style : solid;
+				border-color : #e3e3e3;
+				border-width : 1px;
+				height : 80%;
+				background-color :;
+				}
+            
+			.search{
+                
+				width: 40%;
+                
+				height: 100%;
+                
+				background-color: white;
+                
+				float: left;
+            
+				}
+            
+			.go{
+                
+				width: 100%;
+                
+				height: 100%;
+                
+				border: none;
+                
+				font-size: 20;
+                
+				padding-left: 3%;
+            
+				}.links{
+                
+				width: 50%;
+                
+				height: 100%;
+                
+				color: #d3d3d3;
+                
+				font-size: 20;
+                                float: left;
+           
+				}
+
+			.link{
+				width : 15%;
+				height : 100%;
+				padding-left : 4%;
+				padding-top : 4%;
+				float : left;
+                                margin-left: 30px;
+				}
+                                .link:hover{
+                                    background-color: grey;
+                                    color: black;
+                                }        
+			.banner{
+                
+				width : 100%;
+                
+				height : 50%;
+				z-index : 1;    
+				}
+			.side{
+				height : 50%;
+				width : 10%;
+				z-index : 2;
+				position : relative;
+				bottom : 50%;
+				float : left; 
+				}
+			.side_right{
+				float : right;
+				height : 50%;
+				width : 10%;
+				z-index : 3;
+				position : relative;
+				bottom : 50%; 
+				}
+			.nav{
+				width : 100%;
+				height : 100%;
+				font-size : 80;
+				opacity : 60%;
+				color : silver;
+				background-color : #e3e3e3;
+				border : none;
+				}
+			.nav:hover{
+					opacity : 80%;
+					}
+			.content{
+                
+				width: 100%;
+                
+				height: 39%;
+				float :left;
+				position : relative;
+				bottom : 50%;         
+				}
+            
+			.row{
+                
+				width: 96%;
+                
+				height: 90%;
+                
+				margin-left : 2%;
+
+				margin-top : 1.5%;                
+				float: left;          
+				}
+            
+			.col{
+                	
+				width: 28%;
+                
+				height: 100%;
+                
+				margin-left: 4%;
+                
+				float: left;
+                
+				border-style: solid;
+                
+				border-width: 1px;
+                
+				border-color: silver;
+            
+				}
+
+			.pic{
+				width : 90%;
+				height : 65%;
+				border-style : solid;
+				border-color : #DCDCDC;
+				border-width : 1px;
+				margin : 5%;
+				}
+			.shop{
+				width : 40%;
+				height : 10%;
+				background-color : black;
+				color : #e3e3e3;
+				margin-top : 5%;
+				border : none;
+				}            
+			.footer{
+                
+				width : 100%;
+                
+				height : 2.5%;
+                
+				background-color : black;
+				float : left;
+
+				position : relative;
+				bottom : 50%;
+				padding-top : 0.5%;            
+				}
+            
+			@media (min-width : 320px){ 
+						.layout {
+                                         
+							max-width : 320px;
+ 
+							height : 820px;                                      
+							}
+
+						.links{
+							font-size : 10;
+							}
+						.nav{
+							font-size : 30;
+							}
+						.eg{
+							width : 90%;
+							}
+						.shop {
+							font-size : 10;
+							}
+                                                        .link{
+                                                            margin-left: 8px;
+                                                        }
+            
+						}
+            
+			@media (min-width : 481px){ 
+						.layout {                                
+							max-width : 481px;
+                                       
+							}
+                
+            
+						}
+            
+			@media (min-width : 641px){ 
+						.layout {
+                                         
+							max-width : 641px;
+
+							}
+						.links{
+							font-size : 20;
+							}
+						.nav{
+							font-size : 80;
+							}
+						.eg{
+							width : auto;
+							}
+						.shop{
+							font-size : 13;
+							}
+                                                        .link{
+                                                               margin-left: 10px;
+                                                        }
+            
+						}
+            
+			@media (min-width : 961px){ 
+						.layout {
+                               
+							max-width : 961px;
+                                       
+							}
+                                                        .link{
+                                                            margin-left: 25px;
+                                                        }
+                
+            
+						}
+            
+			@media (min-width : 1000px){ 
+						.layout {
+                                         
+							max-width : 1000px;
+                                       
+							}
+                
+            
+						}
+		</style>
+		<script type="text/javascript">
+				
+			var image = 'banner1';
+			function change() {
+						var banner = document.getElementById('picture');
+						if (image == 'banner1') {
+							banner.src = 'banner_02.png';
+							image = 'banner2';
+							} else if (image == 'banner2') {
+							banner.src = 'banner_03.png';
+							image = 'banner3';
+							} else {
+							banner.src = 'banner_01.png';
+							image = 'banner1';
+							}
+						}
+			function diff() {
+						var banner = document.getElementById('picture');
+						if (image == 'banner1') {
+							banner.src = 'banner_03.png';
+							image = 'banner3';
+							} else if (image == 'banner3') {
+							banner.src = 'banner_02.png';
+							image = 'banner2';
+							} else {
+							banner.src = 'banner_01.png';
+							image = 'banner1';
+							}
+						}
+		</script>
+    
+	</head>
+    
+	<body>
+        
+		<div class="layout">
+            
+			<div class="header">
+                
+				<div class="logo">
+					<center><img src="logo.png" class="eg"></center>
+				</div>
+                
+				<div class="search">
+                    
+					<form>
+                        
+						<input type="text" class="go" placeholder="Enter your search query here ...">
+                    
+						<input type="submit" hidden>
+                    
+					</form>
+                
+				</div>
+                
+				<div class="links">
+                    
+					<div class="link"><a>Home</a></div> 
+					<div class="link"><a>Offers</a></div> 
+					<div class="link"><a>Settings</a></div> 
+					<div class="link"><a>Login</a></div>
+                
+				</div>
+            
+			</div>
+            
+			<div class="banner">
+                
+				<img src="banner_01.png" width="100%" height="100%" id="picture">            
+			</div>
+			<div class="side">
+				<button type="button" class="nav" onclick="diff()"><</button>
+			</div>
+			<div class="side_right">
+				<button type="button" class="nav" onclick="change()">></button>
+			</div>
+
+			<div class="content">
+                
+				<div class="row">
+                    
+					<div class="col">
+						<div class="pic">
+							<img src="shop_01.png" width="100%" height="100%">
+						</div>
+						<center><button class="shop">Shop Now</button></center>
+					</div>
+                    
+					<div class="col">
+						<div class="pic">
+							<img src="shop_02.png" width="100%" height="100%">
+						</div>
+						<center><button class="shop">Shop Now</button></center>
+					</div>
+                    
+					<div class="col">
+						<div class="pic">
+							<img src="shop_03.png" width="100%" height="100%">
+						</div>
+						<center><button class="shop">Shop Now</button></center>
+					</div>
+                
+				</div>
+            
+			</div>            			
+			
+            
+			<div class="footer">
+				<font color="#e3e3e3"><center>&copy Copyrights Reserved</center></font>
+			</div>
+        
+		</div>
+    	
+	</body>
+</html>
